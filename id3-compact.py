@@ -21,7 +21,7 @@ def compact(fpath):
 		st = os.stat(fpath)
 
 		tag.delete()
-		for key, val in tag.iteritems():
+		for key, val in saved.iteritems():
 			tag[key] = val
 		tag.save()
 
